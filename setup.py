@@ -12,6 +12,21 @@ setup(
             'nagarro.genome.mlops',
             'nagarro.genome.mlops.*'
             ]),
+    install_requires=[
+        'pandas>=1.3.0'
+        ],
+    extra_requires={
+        'genome':[
+            'https://github.com/PrasenjitGiri/nagarro.git@genome#egg=nagarro'
+        ],
+        'genai':[
+            'https://github.com/PrasenjitGiri/nagarro.git@genai#egg=nagarro'
+        ],
+        'mlops':[
+            'https://github.com/PrasenjitGiri/nagarro.git@genai#egg=nagarro'
+        ]
+    },
+    include_package_data=True,
     description='Genome.AI ',
     dependency_links=[
         'https://github.com/PrasenjitGiri/nagarro.git@genome#egg=nagarro',
